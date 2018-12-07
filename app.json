@@ -1,0 +1,50 @@
+{
+  "pages": [    
+    "pages/welcome/welcome",    
+    "pages/me/me",
+    "pages/good/good",     
+    "pages/index/index",   
+    "pages/attention/attention",
+    "pages/index/link/ling",
+    "pages/index/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light", 
+    "navigationBarBackgroundColor": "#ccc", 
+    "navigationBarTextStyle": "black", 
+    "backgroundColor": "#666666", 
+    "enablePullDownRefresh": true, 
+    "navigationBarTitleText": "伊人"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#000",
+    "backgroundColor": "#ccc", 
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "精华",
+        "iconPath": "/images/icon/index.png",
+        "selectedIconPath": "/images/icon/index_sel.png"
+      },
+      {
+        "pagePath": "pages/good/good",
+        "text": "推荐关注",
+        "iconPath": "/images/icon/good.png",
+        "selectedIconPath": "/images/icon/good_sel.png"
+      },
+      {
+        "pagePath": "pages/attention/attention",
+        "text": "关注",
+        "iconPath": "/images/icon/attention.png",
+        "selectedIconPath": "/images/icon/attention_sel.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "/images/icon/me.png",
+        "selectedIconPath": "/images/icon/me_sel.png"
+      }
+    ]
+  }
+}

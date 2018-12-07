@@ -1,0 +1,85 @@
+.mainTabCell{
+  background: white;
+  margin:12rpx;
+  border:1rpx solid #dddcdc;
+}
+.top{
+  overflow: hidden;
+}
+/*头像  */
+.avatar{
+  float:left;
+  width:56rpx;
+  height:56rpx;
+  margin-left:14rpx;
+  margin-top:14rpx;
+}
+.title-time{
+  float:left;
+  display: flex;
+  flex-direction: column;
+  margin-left:14rpx;
+  margin-top:14rpx;
+  color:#454545;
+}
+/*标题  */
+.title{
+  font-size:24rpx;
+  line-height: 28rpx;
+}
+/*时间  */
+.time{
+  font-size:15rpx;
+  margin-top:8rpx;
+  line-height: 20rpx;
+}
+/*更多按钮  */
+.morebtnnormal{
+  width:70rpx;
+  height:70rpx;
+  float:right;
+  margin-right:14rpx;
+}
+/*内容  */
+.content{
+  margin:20rpx 14rpx;
+}
+.content-text{
+  font-size:30rpx;
+  display: block;
+  line-height: 40rpx;
+  margin-bottom:14rpx;
+  color:#333;
+}
+.content image,.content video,.content voice{
+  margin:0 auto;
+  max-width:100%;
+  min-width:70%;
+  display: block;
+}
+/*底部  */
+.bottom{  
+  border-top:1rpx solid #f8f7f7;
+  overflow: hidden;
+  display:flex;
+}
+.bottom-item{
+  flex:1;
+  overflow: hidden;
+  text-align: center;  
+  height:45rpx;
+  padding-top:10rpx; 
+  padding-bottom:20rpx;  
+
+}
+.bottom-item image{
+  width:45rpx;
+  height:45rpx;
+  line-height: 45rpx;
+  vertical-align: bottom;
+}
+.bottom-item text{
+  font-size:23rpx;
+  line-height: 45rpx;
+  vertical-align: bottom;
+}

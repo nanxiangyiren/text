@@ -1,0 +1,68 @@
+.commentCell{
+  padding:10rpx;
+  border-bottom:1rpx solid #f2f2f2;
+  overflow: hidden;
+}
+.user{
+  overflow: hidden;
+}
+.usericon{
+  width: 62rpx;
+  height:62rpx;
+  border-radius: 31rpx;
+  float:left;
+  margin-left:15rpx;
+  margin-top:15rpx;
+}
+.username{
+  float:left;
+  font-size:31rpx;
+  color:#4373a9;
+  height:62rpx;
+  line-height: 62rpx;
+  margin-top:15rpx;
+  margin-left:15rpx;
+}
+.ding{
+  float:right;
+  width:200rpx;
+  height:100%;  
+  text-align: right;
+}
+.ding text{
+  font-size:20rpx;
+  color:#888;
+  height:62rpx;
+  line-height: 62rpx;
+  margin-top:15rpx;
+}
+.ding image{
+  width:40rpx;
+  height:40rpx;
+  margin-right:15rpx;
+  margin-top:36rpx;
+}
+.ding_count{
+  float:left;
+  width:90rpx;
+  text-align: center;
+}
+.ding_count text{
+  font-size:16rpx;
+  margin-top:7rpx;
+  margin-left:15rpx;
+  display: block;
+  width:58rpx;
+  border-radius: 5rpx;
+  line-height: 26rpx;
+  height: 26rpx;
+  background:#b5c7dd;
+}
+.content_text{
+  line-height: 40rpx;
+  font-size:32rpx;
+  color:#333;
+  margin-left:90rpx;
+  margin-right:50rpx;
+  margin-bottom:20rpx;
+}

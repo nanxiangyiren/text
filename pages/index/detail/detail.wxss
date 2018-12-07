@@ -1,0 +1,19 @@
+@import "../../common/detailCell/detailCell.wxss";
+page{
+  background:white;
+}
+.divide_view{
+  height:20rpx;
+  background:#f2f2f2;
+}
+.comment_text{
+  display: block;
+  height: 68rpx;
+  font-size:26rpx;
+  color:#888;
+  line-height: 68rpx;
+  margin-left:15rpx;
+}
+.scrollview{
+  height:100%;
+}

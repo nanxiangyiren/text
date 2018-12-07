@@ -1,0 +1,72 @@
+page{
+  background:#f0f0f0;
+}
+.cell{
+  margin:30rpx 0;
+  background:white;
+  height:92rpx;
+  border:1rpx solid #bcbcbc;
+  border-left:0;
+  border-right:0;
+}
+.cell image{
+  width:70rpx;
+  height:70rpx;
+  float:left;
+  margin-left:20rpx;
+  margin-top:11rpx;  
+}
+.cell text{
+  font-size:31rpx;
+  height: 92rpx;
+  float:left;
+  line-height: 92rpx;
+  margin-left:20rpx;
+}
+.cell .right_arrow{
+  float:right;
+  margin-right:20rpx;
+  font-size:40rpx;
+  line-height: 92rpx;
+}
+.menu{
+  background: #fff;
+  width:750rpx;
+  overflow: hidden;
+}
+.menu-box{
+    width:760rpx;
+} 
+.menu_item{
+  background:white;
+  float:left;
+  width:187rpx;  
+  border-right:1rpx solid #f1f0f0;
+  border-bottom:1rpx solid #f1f0f0;
+}
+.menu_item image{
+  height:140rpx;
+  width: 140rpx;
+  display: block;
+  margin:10rpx auto;
+}
+.menu_item text{
+  display: block;
+  text-align: center;
+  font-size:31rpx;
+  color:#666;
+}
+.music{
+  animation: rotate 5s linear infinite;
+}
+.pause{
+  animation-play-state: paused;
+}
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg)
+  }
+  100%{
+    transform:rotate(360deg)
+  }
+}

@@ -1,0 +1,7 @@
+<template name ="goodLeftTemplate">
+  <view bindtap='leftTap'>
+    <view class='{{item.id==currentId?"item active":"leftTitle"}}' wx:for= "{{leftList}}" wx:key="{{index}}" data-id='{{item.id}}' data-index="{{index}}">
+      {{item.name}}
+    </view>
+  </view>
+</template>

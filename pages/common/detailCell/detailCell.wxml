@@ -1,0 +1,22 @@
+<template name = "detailCellTemplate">
+  <view class="commentCell">
+  <!--第一行  -->
+    <view class="user">
+      <image src="{{item.user.profile_image}}" class="usericon"></image>
+      <text class="username">{{item.user.username}}</text>
+      <view class="ding">
+        <text>{{item.user.total_cmt_like_count}}</text>
+        <image src="../../../images/index/zan.png"></image>
+      </view>
+    </view>
+  <!--第二行  -->
+  <view>
+    <view class="ding_count">
+      <text>{{item.user.total_cmt_like_count}}</text>
+    </view>
+    <view class="content_text">
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+  </view>
+</template>

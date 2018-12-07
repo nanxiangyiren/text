@@ -1,0 +1,19 @@
+<view class="cell">
+  <image class="" src="../../images/me/member.png"></image>
+  <text>登录/注册</text>
+  <text class="right_arrow">></text>
+</view>
+<view class="cell">
+  <image class="{{isPlaying?'music':'music pause'}}" src="../../images/me/music.png" ></image>
+  <text  bindtap="randomPlaySong">切换背景音乐</text>
+  <image class="right_arrow" src='../../images/me/pause.png' wx:if="{{isPlaying}}" bindtap="musicStateChange"></image>
+  <image class="right_arrow" src='../../images/me/play.png' wx:if="{{!isPlaying}}" bindtap="musicStateChange"></image>
+</view>
+<view class="menu">
+  <view class="menu-box">
+    <view class="menu_item" wx:for="{{menulist}}" wx:key="{{index}}">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

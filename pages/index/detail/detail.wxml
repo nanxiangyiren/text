@@ -1,0 +1,19 @@
+<import src="../../common/detailCell/detailCell.wxml"/>
+
+<scroll-view class="scrollview" scroll-y="{{true}}">
+  <view class="container hotcomment"  wx:if="{{!hotcomment_hidden}}">
+    <text class="comment_text">最热评论</text>
+    <template is="detailCellTemplate" data="{{item:hotlist[0]}}"/>
+    <view class="divide_view"></view>
+  </view>
+
+  <view class="newcomment">
+    <text class="comment_text">最新评论</text>
+    <block wx:for="{{datalist}}" wx:key="{{index}}">
+      <template is="detailCellTemplate" data="{{item:item}}"/>
+    </block>
+  </view>
+</scroll-view>
+
+
+

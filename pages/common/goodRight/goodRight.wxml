@@ -1,0 +1,13 @@
+<template name="goodRightTemplate">
+    <view>
+      <view class='item rightTitle' wx:for="{{rightList}}" wx:key="{{index}}">
+        <image class='img' src='{{item.header}}'></image>
+        <view class='titleInfo'>
+          <text class='username'>{{item.screen_name}}
+        </text>
+        <text class='fans_count'>{{item.fans_count}}人关注</text>
+        <button catchtap='attentionTap' data-index="{{index}}">+关注</button>    
+       </view>        
+      </view>
+    </view>
+</template>

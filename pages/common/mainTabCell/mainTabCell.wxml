@@ -1,0 +1,49 @@
+<template name="mainTabCellTemplate">
+<view class="mainTabCell">
+    <!--顶部  -->
+    <view class="top">
+      <!--头像  -->
+      <image src="{{item.profile_image}}" class="avatar"></image>
+      <!-- 标题，时间 -->
+      <view class="title-time">
+        <text class="title">{{item.name}}</text>
+        <text class="time">{{item.create_time}}</text>
+      </view>
+      <!-- 更多按钮 -->
+      <image src="../../images/index/more.png" class="morebtnnormal"></image>
+    </view>
+    <!--内容  -->
+    <view class="content">
+      <text class="content-text">{{item.text}}</text>
+      <!--大图  -->
+      <image src="{{item.image0}}" wx:if="{{item.image0&&(!item.videouri)&&((!item.voiceuri))}}" mode="aspectFit"></image>
+      <!--视频  -->
+      <video src="{{item.videouri}}" wx:if="{{item.videouri}}"></video>
+      <!--声音  -->
+      <audio src="{{item.voiceuri}}" wx:if="{{item.voiceuri}}"></audio>
+    </view>
+    <!--底部  -->
+    <view class="bottom">
+       <!--赞  -->
+       <view class="bottom-item">
+          <image src="/images/index/zan.png"></image>
+          <text>{{item.love}}</text>
+       </view>
+       <!-- 踩 -->
+       <view class="bottom-item">
+          <image src="/images/index/cai.png"></image>
+          <text>{{item.hate}}</text>
+       </view>
+       <!-- 评论 -->
+       <view class="bottom-item" catchtap="commentTap" data-id="{{item.id}}">
+          <image src="/images/index/comment.png"></image>
+          <text>{{item.comment}}</text>
+       </view>
+       <!-- 转发 -->
+       <view class="bottom-item">
+          <image src="/images/index/repost.png"></image>
+          <text>{{item.repost}}</text>
+       </view>
+    </view>
+</view>
+</template>
